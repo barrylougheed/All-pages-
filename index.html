@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> MEDICAL-HUB</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src=http://code.jquery.com/jquery-latest.min.js></script>
+		<link rel="stylesheet" href="css/bjqs.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+		<!--bjqs-1.3 is not our code so i have left it out of our main JavaScript the name of the creator of the js is contained within the js-->
+		<script src="js/bjqs-1.3.min.js"></script>
+	</head>
+	<body>
+		<div id="background">
+			<div id="header">	
+				<img src="images/mainlogo.jpg" >
+				<h1>MEDICAL-HUB</h1>
+				<ul id="topside">
+				<li class="btn" id="btn1">
+							<a class="btnstyle" href="index.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">This will bring you to the homepage</a>
+								</div>
+						</li>
+						<li class="btn" id="btn2">
+							<a class="btnstyle" href="index3.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Contact us</a>
+								<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#">Click for our details</a>
+								</div>
+						</li>
+						<li class="btn" id="btn3">
+							<a class="btnstyle" href="index2.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Search </a>
+								<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+									<a href="#"> Search medical services</a>
+								</div>
+						</li>
+					</ul>
+			</div>
+			<div id="wrapper">
+			
+				<div class="side" id="sidepg1">
+						
+					<div id="smallside">
+						<div>
+							<h2 id="sideheader"> search for services in your area </h2>
+							<p id="sidepara">on our website you can search for medical services in your area fast and effectively</p>
+						</div>
+					</div>
+					<div id="largeside">
+						<div id="insidediv">
+							<form id="searchstyle" name="searchstyle" method="get" onsubmit="return false;">
+								<input type="text" name="textinput" id="erase" class="textinput" name="sb" size="20" maxlength="120" value="find services in your area"><!--<input type="button" value="Search" class="searchbutton" id="click">-->
+							</form>
+							<select class="slop" name="location" id="location" style="width:140px">
+								<option value="Location">Location</option>
+								<option value="Dublin">Dublin</option>
+								<option value="Wicklow">Wicklow</option>
+							</select>
+							<select class="slop" name="category" id="category" style="width:140px">
+								<option value="Services">Services</option>
+								<option value="Pharmacy">Pharmacy</option>
+								<option value="GP">GP</option>
+							</select>
+							<div  id="sidebtncontainer">
+							<input id="sidebtn" type="button" onclick="stCookies()" value="search">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="container">
+						<div id="banner-slide">
+
+ 
+							<ul class="bjqs">
+								<li><a href=""><img src="images/smoke.jpg" alt="Second Hand smoke leads to chronic allergies in children" title="smoking" width="712px"></a></li>
+								<li><img src="images/mentalhealth.jpg" title="mental health"></li>
+								<li><img src="images/shhh.png" title=""></li>
+							</ul>
+     
+						</div>
+						
+							<script class="">
+								jQuery(document).ready(function($) {
+          
+									$('#banner-slide').bjqs({
+										animtype      : 'slide',
+										height        : 320,
+										width         : 712,
+										responsive    : true,
+										randomstart   : true
+									});
+          
+								});
+							</script>
+							<!--main is contained within the container div to create an appearance of overlapping-->
+						<div class="main" id="homemain">
+							<div id="centermain">
+								<div class="collum"> 
+
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Open Late </a>
+										</div>
+										<div class="content">
+											<img src="images/moon.jpg">
+											<div class="fontplaceholder">
+												<p>Find nearby services open at late hours</p>
+											</div>
+										</div>
+									</div>
+							 
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > GP's </a> 
+										</div>
+										<div class="content">
+											<img src="images/GP.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find local GP's and doctors</p>
+											</div>
+										</div>
+									</div>
+							 
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Health Centres </a>
+										</div>
+										<div class="content">
+										<img src="images/health.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find local health centres</p>
+											</div>
+										</div>
+									</div>
+								</div><!--collum1end-->
+								<!--Collum2-->
+								<div class="collum"> 
+							
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Hospitals </a>
+										</div>
+										<div class="content">
+											<img src="images/hospital.png" height="50px;" width="90%" >
+												<div class="fontplaceholder">
+													<p>Find the closest hospitals to you</p>
+												</div>
+										</div>
+									</div>
+							 
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Disability  </a>
+										</div>
+										<div class="content">
+											<img src="images/disability.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find nearby services regarding disabilities</p>
+											</div>
+										</div>
+									</div>
+							 
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Physiotherapy </a> 
+										</div>
+										<div class="content">
+											<img src="images/physio.jpg" height="50px;" width="90%" > 
+											<div class="fontplaceholder">
+												<p>Find nearby physiotherapists</p>
+											</div>
+										</div>
+									</div>
+								</div><!--Collum2end-->
+								
+								<!--Collum3-->
+								<div class="collum"> 
+							
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Pharmacies </a>
+										</div>
+										<div class="content">
+											<img src="images/chemist logo.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find local pharmacies and chemists</p>
+											</div>
+										</div>
+									</div>
+							 
+									<div class="item"> 
+										<div class="top"> 
+											<a href="https://www.google.ie" > Older People </a>
+										</div>
+										<div class="content">
+											<img src="images/oldpeople.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find neaby services provided for older people</p>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="top"> 
+											<a href="https://www.google.ie" > Sexual Health </a>
+										</div>
+										<div class="content">
+											<img src="images/sexualhealth.jpg" height="50px;" width="90%" >
+											<div class="fontplaceholder">
+												<p>Find nearby services regarding sexual health</p> 
+											</div>
+										</div>
+									</div>
+								</div> <!--Collum3end-->
+								
+								
+							</div>
+						</div>
+				</div>
+				<!--for anchors and other links-->
+				<div id="bottom">
+					<div>
+						<table width="940px">
+							<tbody>
+								<tr>
+									<td class="footer" >MEDICAL-HUB <br> Email:info@medicalhub.com <br> Call Us:030943513</td>
+									<td class="footer">
+										<a href="index.html" >Home</a><br>
+										<a href="index2.html" > search </a> <br>
+										<a href="index3.html"> About us</a>
+									</td>
+									<td class="footer">
+										<a href="termsandconditions.html" >Terms and Conditions</a><br>
+										<a href="index3.html" > Contact us </a> <br>
+										<a href="index3.html"> About us</a>
+									</td>
+									<td class="footerLast">
+										<a href="cookiepolicy.html">Policy on Cookies</a><br>
+										<a href="PrivacyPolicy.html">Privacy Policy</a><br>
+										<a href="disclaimer.html"> Disclaimer </a>
+									</td>
+								<tr>
+							</tbody>
+						</table>
+					</div>
+			</div>
+		</div>
+		
+		<!--jquery.secret-source.min.js is not our code so it has been left out of our main js file the creators name is in bjqs-1.3-->
+	   <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+	$("#erase").keypress(function(event){
+    if(event.keyCode == 13){
+		stCookies();
+	}
+	});
+	function stCookies(){
+	//clear previous cookies
+		eraseCookie('Userinpt1');
+		eraseCookie('Userinpt2');
+		eraseCookie('Userinpt3');
+		test();
+		window.open("index2.html",'_self');
+	}
+    </script>
+	<script src="js/behaviour.js"></script>
+	<script src="js/homepagebehaviour.js"></script>
+	
+	</body>
+
+</html>
